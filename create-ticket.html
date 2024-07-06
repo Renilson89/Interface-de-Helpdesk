@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Chamado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <div class="system-name">Dashboard</div>
+            <div class="system-name">Chamados</div>
+        </nav>
+        <div class="logout">Sair</div>
+    </header>
+
+    <div class="create-ticket-container">
+        
+        <h2>Criar Chamado</h2>
+        <form id="create-ticket-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="sector">E-mail</label>
+            <input type="text" id="sector" name="sector" required>
+            
+            <label for="phone">Telefone</label>
+            <input type="text" id="phone" name="phone" required>          
+                        
+            <label for="priority">Setor</label>
+            <select id="priority" name="priority" required>
+                <option value="">Selecione o setor</option>
+                <option value="informatica-ti">Informática - TI</option>
+                <option value="rh">RH</option>
+                <option value="contabilidade">Contabilidade</option>
+                <option value="financeiro">Financeiro</option>
+                <option value="almoxarifado">Almoxarifado</option>
+                <option value="protocolo">Protocolo</option>
+                <option value="coordenadoria">Coordenadoria</option>
+            </select>
+            
+            <div id="informatica-ti-options" style="display: none;">
+                <label for="subsector">Problemas pré-definidos de TI</label>
+                <select id="subsector" name="subsector">
+                    <option value="">Selecione o Problema</option>
+                    <option value="suporte">Computador não liga</option>
+                    <option value="suporte">Falha na Impressora</option>
+                    <option value="suporte">Dúvidas </option>
+                    <option value="suporte">Mais de uma Dúvida </option>
+                    <option value="suporte">Falha no login </option>
+                    <option value="suporte">Pertubar a TI </option>
+                    <option value="suporte">Outros </option>
+                    
+                </select>
+            </div>
+            <div id="rh-options" style="display: none;">
+                <label for="subsector-rh">Problemas pré-definidos do RH</label>
+                <select id="subsector-rh" name="subsector-rh">
+                    <option value="">Selecione o Problema</option>
+                    <option value="recrutamento">Recrutamento</option>
+                    <option value="treinamento">Treinamento</option>
+                    <option value="beneficios">Benefícios</option>
+                    <option value="beneficios">Férias</option>
+                    <option value="beneficios">Requerimentos de Documentos</option>
+                    <option value="beneficios">Outros </option>
+                </select>
+            </div>
+
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <div class="button-container">
+            <button class="btn" id="back-btn">Voltar</button>             
+            <button type="submit" class="btn">Criar Chamado</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="nav-links1">
+            <div class="system-name">Dashboard</div>
+            <div class="system-name">Chamados</div>
+        </nav>
+        <nav class="nav-links">
+            <div class="system-name">Home</div>
+            <div class="system-name">Contatos</div>                
+            <div class="system-name">Ajuda</div>
+        </nav>
+        <div class="logout" id="logout-btn">Sair</div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">- Painel de Controle</a></li>
+                <li><a href="#">- Almoxarifado</a></li>
+                <li><a href="#">- Usuários</a></li>
+                <li><a href="#">- Relatórios</a></li>
+                <li><a href="#">- Configurações</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="relatorio">
+                <h2>Relatório de Prioridades</h2>
+                <div class="priority-report">
+                    <div class="priority-box alta">
+                        Alta: <span id="high-priority-count">0</span>
+                    </div>
+                    <div class="priority-box media">
+                        Média: <span id="medium-priority-count">0</span>
+                    </div>
+                    <div class="priority-box baixa">
+                        Baixa: <span id="low-priority-count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="search-filters">
+                <input type="text" id="search" placeholder="Buscar...">
+                <select id="status-filter">
+                    <option value="todos">Todos</option>
+                    <option value="aberto">Aberto</option>
+                    <option value="fechado">Fechado</option>
+                </select>
+            </div>
+            <button class="btn create-ticket-btn">Criar Chamado</button>
+            <div class="tickets">
+                <table id="tickets-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data de abertura</th>
+                            <th>Descrição do chamado</th>
+                            <th>Status</th>
+                            <th>Prioridade</th>
+                            <th>Solicitante</th>
+                            <th>Tempo para Solução</th>
+                            <th>Fone</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>20/06/2024</td>
+                            <td>Problema no login</td>
+                            <td class="status">Fechado</td>
+                            <td class="prioridade-media">Média</td>
+                            <td>Renilson Marques</td>
+                            <td>1 dia</td>
+                            <td>99936-6535</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>28/06/2024</td>
+                            <td>Sistema Fora</td>
+                            <td class="status">Aberto</td>
+                            <td class="prioridade-alta">Alta</td>
+                            <td>Nilson Pinheiro</td>
+                            <td>1 hora</td>
+                            <td>99936-6535</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>28/06/2024</td>
+                            <td>Ligar o Arcondicionado</td>
+                            <td class="status">Aberto</td>
+                            <td class="prioridade-baixa">Baixa</td>
+                            <td>Alguém</td>
+                            <td>3 dias</td>
+                            <td>99936-6535</td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>28/06/2024</td>
+                            <td>Fazer o café</td>
+                            <td class="status">Fechado</td>
+                            <td class="prioridade-alta">Alta</td>
+                            <td>Dev Antigo</td>
+                            <td>3 minutos</td>
+                            <td>99936-6535</td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>02/06/2024</td>
+                            <td>Consertar o bebedouro</td>
+                            <td class="status">Aberto</td>
+                            <td class="prioridade-media">Média</td>
+                            <td>GRH</td>
+                            <td>3 anos</td>
+                            <td>99936-6535</td>
+                        </tr>
+                        <tr>
+                            <td>006</td>
+                            <td>09/06/2024</td>
+                            <td>Goteira no ar</td>
+                            <td class="status">Aberto</td>
+                            <td class="prioridade-baixa">Baixa</td>
+                            <td>Almox</td>
+                            <td>10 anos</td>
+                            <td>99936-6535</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Grupo Rovema. Todos os direitos reservados.</p>
+        <p><a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
+    </footer>
+   
+    <script src="scripts.js"></script>
+</body>
+</html>
