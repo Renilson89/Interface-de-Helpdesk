@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="nav-links1">
+            <div class="system-name"><a href="index.html">Dashboard</a></div>
+            <div class="system-name"><a href="index.html">Chamados</a></div>
+        </nav>
+        <nav class="nav-links">
+            <div class="system-name"><a href="index.html">Home</a></div>
+            <div class="system-name"><a href="Index.html">Contatos</a></div>                
+            <div class="system-name"><a href="Index.html">Ajuda</a></div>
+        </nav>
+        <div class="logout" id="logout-btn">Sair</div>
+    </header>
+
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">° Dashboard</a></li><hr>
+                <li><a href="#">° Almoxarifado</a></li><hr>
+                <li><a href="#">° Usuários</a></li><hr>
+                <li><a href="#">° Gerar Relatórios</a></li><hr>
+                <li><a href="#">° Configurações</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Dashboard</h2>
+            <div class="dashboard-content">
+                
+                <div class="chart">
+                    <h3 class="chart-title">Gráfico de Prioridades</h3>
+                    <div class="bar" style="width: 60%;">Baixa</div>
+                    <div class="bar" style="width: 50%;">Média</div>
+                    <div class="bar" style="width: 40%;">Alta</div>
+                </div>
+                <div class="chart">
+                    <h3 class="chart-title">Gráfico de Status (Aberto)</h3>
+                    <div class="pie"> 75%                     
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Grupo Rovema. Todos os direitos reservados.</p>
+        <p><a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
+    </footer>
+   
+    <script src="scripts.js"></script>
+</body>
+</html>
