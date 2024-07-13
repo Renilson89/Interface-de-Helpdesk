@@ -433,12 +433,12 @@ footer {
 }
 
 .slice.aberto {
-    background-color: #e74c3c; /* Cor para status Aberto */
+    background-color: #e74c3c; 
     transform: rotate(0deg);
 }
 
 .slice.fechado {
-    background-color: #3498db; /* Cor para status Fechado */
+    background-color: #3498db; 
     transform: rotate(180deg);
 }
 
