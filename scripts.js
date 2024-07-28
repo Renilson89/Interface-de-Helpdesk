@@ -65,14 +65,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (ticketsTable) {
             for (const row of ticketsTable.rows) {
-                const [idCell, dateCell, subjectCell, statusCell, priorityCell, requesterCell, timeToSolveCell, phoneCell] = row.cells;
+                const [idCell, dateCell, subjectCell, statusCell] = row.cells;
                 const matchesSearch = subjectCell.textContent.toLowerCase().includes(searchTerm);
                 const matchesStatus = statusValue === 'todos' || statusCell.textContent.toLowerCase() === statusValue;
 
                 if (matchesSearch && matchesStatus) {
                     row.style.display = '';
                 } else {
-                    row.style.display = 'none';
+                    row.style.display = 'none'
                 }
             }
         }
