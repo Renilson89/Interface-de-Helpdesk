@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolver Chamado - GR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="nav-links1">
+            <div class="system-name"><a href="dashboard.html">Dashboard</a></div>
+            <div class="system-name"><a href="index.html">Chamados</a></div>
+        </nav>
+        <nav class="nav-links">
+            <div class="system-name">Home</div>
+            <div class="system-name">Contatos</div>
+            <div class="system-name">Ajuda</div>
+        </nav>
+        <div class="logout" id="logout-btn">Sair</div>
+    </header>
+    <div class="container">
+        <main>
+            <div class="resolver-chamado">
+                <h2>Resolver Chamado</h2>
+                <form action="submit-solution.html" method="POST">
+                    <label for="id-chamado">ID do Chamado:</label>
+                    <input type="text" id="id-chamado" name="id-chamado" value="005" readonly>
+                    
+                    <label for="descricao-solucao">Descrição da Solução:</label>
+                    <textarea id="descricao-solucao" name="descricao-solucao" rows="6" placeholder="Descreva o que foi feito para solucionar o problema..."></textarea>
+                    
+                    <button type="submit" class="btn">Enviar Solução</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Grupo Rovema. Todos os direitos reservados.</p>
+        <p><a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

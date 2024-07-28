@@ -443,3 +443,133 @@ footer {
 }
 
 
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.ticket-details, .ticket-comments {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-details h2, .ticket-comments h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.ticket-info p {
+    margin-bottom: 10px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.actions .btn:hover {
+    background-color: #0056b3;
+}
+
+.ticket-comments ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-comments ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.ticket-comments textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.ticket-comments .btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+.ticket-comments .btn:hover {
+    background-color: #007bff;
+    
+   
+}
+
+
+.resolver-chamado {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    color: white;
+}
+
+.resolver-chamado h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  
+}
+
+.resolver-chamado form {
+    display: flex;
+    flex-direction: column;
+   ;
+}
+
+.resolver-chamado label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+
+.resolver-chamado input[type="text"], .resolver-chamado textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.resolver-chamado button.btn {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.resolver-chamado button.btn:hover {
+    background-color: #007bff;
+    color: white;
+
+}
+
+
+
+
+

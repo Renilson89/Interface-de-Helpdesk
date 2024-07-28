@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendente - GR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="nav-links1">
+            <div class="system-name"><a href="dashboard.html">Dashboard</a></div>
+            <div class="system-name"><a href="index.html">Chamados</a></div>
+        </nav>
+        <nav class="nav-links">
+            <div class="system-name">Home</div>
+            <div class="system-name">Contatos</div>
+            <div class="system-name">Ajuda</div>
+        </nav>
+        <div class="logout" id="logout-btn">Sair</div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">° Dashboard</a></li><hr>
+                <li><a href="#">° Almoxarifado</a></li><hr>
+                <li><a href="#">° Usuários</a></li><hr>
+                <li><a href="#">° Gerar Relatórios</a></li><hr>
+                <li><a href="#">° Configurações</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="ticket-details">
+                <h2>Detalhes do Chamado</h2>
+                <div class="ticket-info">
+                    <p><strong>ID:</strong> 005</p>
+                    <p><strong>Solicitante:</strong> Nilson Pinheiro</p>
+                    <p><strong>Data de Abertura:</strong> 28/06/2024</p>
+                    <p><strong>Descrição:</strong> Sistema Fora</p>
+                    <p><strong>Status:</strong> Em Pausa</p>
+                    <p><strong>Prioridade:</strong> Alta</p>
+                    <p><strong>Tempo para Solução:</strong> 1 hora</p>
+                </div>
+                <div class="actions">
+                    <button class="btn" id="start-progress-btn">Iniciar Atendimento</button>
+                    <button class="btn" id="resolve-btn"><a href="resolver.html">Marcar como Resolvido</a></button>
+                </div>
+            </div>
+            <div class="ticket-comments">
+                <h3>Comentários</h3>
+                <ul id="comments-list">
+                    <li><strong>Técnico Suporte:</strong> Verificando problema no sistema. Em análise. -- <strong>Data/horas:</strong> 28/07/2024 10:40</li>
+                    <li><strong>Técnico Suporte:</strong> Entrando em contato com a equipe de INFRA para verificar o servidor -- <strong>Data/horas:</strong> 28/07/2024 10:50</li>
+                    <li><strong>Técnico Infra:</strong> Verificado, servidor operando normalmente solicito que se informe com a equipe de desenvolvimento -- <strong>Data/horas:</strong> 28/07/2024 10:45</li>
+                </ul>
+                <textarea id="new-comment" placeholder="Adicionar um comentário..."></textarea>
+                <button class="btn" id="add-comment-btn">Adicionar Comentário</button>
+            </div>
+        </main>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Grupo Rovema. Todos os direitos reservados.</p>
+        <p><a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
