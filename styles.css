@@ -222,6 +222,8 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    background-color: #567cc6;
+    color: white;
 }
 
 
@@ -524,7 +526,7 @@ footer {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    color: white;
+    
 }
 
 .resolver-chamado h2 {

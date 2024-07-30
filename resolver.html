@@ -23,18 +23,33 @@
         </nav>
         <div class="logout" id="logout-btn">Sair</div>
     </header>
-    <div class="container">
+    <div class="container"> 
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">° Dashboard</a></li><hr>
+                <li><a href="#">° Almoxarifado</a></li><hr>
+                <li><a href="#">° Usuários</a></li><hr>
+                <li><a href="#">° Gerar Relatórios</a></li><hr>
+                <li><a href="#">° Configurações</a></li>
+            </ul>
+        </nav> 
         <main>
             <div class="resolver-chamado">
-                <h2>Resolver Chamado</h2>
-                <form action="submit-solution.html" method="POST">
+                <h2>Finalizar Chamado</h2>
+                <form action="Index.html" method="POST">
                     <label for="id-chamado">ID do Chamado:</label>
                     <input type="text" id="id-chamado" name="id-chamado" value="005" readonly>
+                    <label for="id-chamado">Solicitante:</label>
+                    <input type="text" id="id-chamado" name="id-chamado" value="Nilson Pinheiro" readonly>
+                    <label for="id-chamado">Descrição do chamado:</label>
+                    <input type="text" id="id-chamado" name="id-chamado" value="Sistema Fora" readonly>
                     
                     <label for="descricao-solucao">Descrição da Solução:</label>
                     <textarea id="descricao-solucao" name="descricao-solucao" rows="6" placeholder="Descreva o que foi feito para solucionar o problema..."></textarea>
-                    
+                   <div class="row">
+                    <button type="submit" class="btn" id="back-btn">Voltar</button>      
                     <button type="submit" class="btn">Enviar Solução</button>
+                </div>
                 </form>
             </div>
         </main>

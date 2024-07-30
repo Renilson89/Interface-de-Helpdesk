@@ -50,6 +50,11 @@
             </div>
             <div class="search-filters">
                 <input type="text" id="search" placeholder="Buscar...">
+                <input type="text" id="search-id" placeholder="Buscar por ID">
+                <input type="text" id="search-name" placeholder="Buscar por Nome">
+                <input type="date" id="search-date" placeholder="Buscar por Data">
+                <button class="btn" onclick="filterTable()">Filtrar</button>
+                
                 <select id="status-filter">
                     <option value="todos">Todos</option>
                     <option value="aberto">Aberto</option>
@@ -57,7 +62,7 @@
                     <option value="EmPausa">Em Pausa</option>
                     <option value="EmAndamento">Em Andamento</option>
                 </select>
-            </div>
+            </div>  
             <button class="btn create-ticket-btn">Criar Chamado</button>
             <div class="tickets">
                 <table id="tickets-table">
@@ -82,7 +87,7 @@
                             <td>Renilson Marques</td>
                             <td>20/06/2024</td>
                             <td>Problema no login</td>
-                            <td class="status">Fechado</td>
+                            <td class="status">Aberto</td>
                             <td class="prioridade-media">Média</td>                            
                             <td>1 dia</td>
                             <td>Técnico Suporte</td>
@@ -109,7 +114,7 @@
                             <td class="status">Aberto</td>
                             <td class="prioridade-baixa">Baixa</td>                          
                             <td>3 dias</td>
-                            <td>Técnico Suporte</td>
+                            <td>NILSON PINHEIRO </td>
                             <td>99936-6535</td>
                             <td><a href="atendente.html">🔗</a></td>
                         </tr>

@@ -180,6 +180,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+   // Filtro por nome / ID / e por data que ainda não ta funcionando pq data e chato de se mexer
+    function filterTable() {      
+        const searchId = document.getElementById('search-id').value.toLowerCase();
+        const searchName = document.getElementById('search-name').value.toLowerCase();
+        const searchDate = document.getElementById('search-date').value; 
+        const rows = document.querySelectorAll('#tickets-table tbody tr');
+    
+        rows.forEach(row => {           
+            const id = row.cells[0].textContent.toLowerCase();
+            const name = row.cells[1].textContent.toLowerCase();
+            const date = row.cells[2].textContent;   
+            const showId = !searchId || id.includes(searchId);
+            const showName = !searchName || name.includes(searchName);
+            const showDate = !searchDate || date === searchDate;
+    
+            if (showId && showName && showDate) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    }
     
     
 

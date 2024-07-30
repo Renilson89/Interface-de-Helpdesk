@@ -6,7 +6,7 @@
     <title>Criar Chamado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<div>
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo">
@@ -20,11 +20,11 @@
         <div class="logout">Sair</div>
     </header>
     
-
+     
     <div class="create-ticket-container">
         
         <h2>Criar Chamado</h2>
-        <form id="create-ticket-form">
+        <form id="create-ticket-form" action="Index.html" method="POST">
             <label for="name">Nome</label>
             <input type="text" id="name" name="name" required>
             
@@ -88,13 +88,14 @@
             <label for="subject">Assunto</label>
             <input type="text" id="subject" name="subject" required>
 
-            <div class="button-container">
+            <div class="button-container" >
             <button class="btn" id="back-btn">Voltar</button>             
             <button type="submit" class="btn">Criar Chamado</button>
             </div>
 
         </form>
     </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
