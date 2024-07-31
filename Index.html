@@ -54,7 +54,13 @@
             <div class="search-filters">
                 <input type="text" id="search" placeholder="Buscar...">
                 <input type="text" id="search-id" placeholder="Buscar por ID">
-                <input type="text" id="search-name" placeholder="Buscar por Nome">
+                <input type="text" id="search-name" placeholder="Buscar por Nome">                  
+                <select id="search-priori">
+                    <option value="todos">Todos</option>
+                    <option value="alta">Alta</option>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>                    
+                </select>
                 <input type="date" id="search-date" placeholder="Buscar por Data">
                 <button class="btn" onclick="filterTable()">Filtrar</button>
                 
@@ -65,6 +71,7 @@
                     <option value="EmPausa">Em Pausa</option>
                     <option value="EmAndamento">Em Andamento</option>
                 </select>
+                
             </div> 
             <br> 
             <button class="btn create-ticket-btn">Criar Chamado</button>
@@ -230,10 +237,6 @@
                 <br>
                 
             </div>
-
-
-
-
 
 
         </main>

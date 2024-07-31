@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (ticketsTable) {
             for (const row of ticketsTable.rows) {
-                const [idCell, dateCell, subjectCell, statusCell] = row.cells;
+                const [subjectCell, statusCell] = row.cells;
                 const matchesSearch = subjectCell.textContent.toLowerCase().includes(searchTerm);
                 const matchesStatus = statusValue === 'todos' || statusCell.textContent.toLowerCase() === statusValue;
 
@@ -184,18 +184,24 @@ document.addEventListener('DOMContentLoaded', function() {
     function filterTable() {      
         const searchId = document.getElementById('search-id').value.toLowerCase();
         const searchName = document.getElementById('search-name').value.toLowerCase();
+        const searchPriori = document.getElementById('search-priori').value.toLowerCase();
         const searchDate = document.getElementById('search-date').value; 
+        const searchStatus = document.getElementById('status-filter').value.toLowerCase();
         const rows = document.querySelectorAll('#tickets-table tbody tr');
     
         rows.forEach(row => {           
             const id = row.cells[0].textContent.toLowerCase();
             const name = row.cells[1].textContent.toLowerCase();
-            const date = row.cells[2].textContent;   
+            const date = row.cells[2].textContent; 
+            const priori = row.cells[3].textContent.toLowerCase(); 
+            const status = row.cells[4].textContent.toLowerCase(); 
             const showId = !searchId || id.includes(searchId);
             const showName = !searchName || name.includes(searchName);
             const showDate = !searchDate || date === searchDate;
+            const showPriori = !searchPriori || priori.includes(searchPriori);
+            const showStatus = searchStatus === 'todos' || status.includes(searchStatus);
     
-            if (showId && showName && showDate) {
+            if (showId && showName && showDate & showPriori && showStatus) {
                 row.style.display = '';
             } else {
                 row.style.display = 'none';
